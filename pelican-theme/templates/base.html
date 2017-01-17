@@ -119,12 +119,8 @@
 							{% for title, link in MENUITEMS %}
 							    <li><a href="{{ link }}">{{ title }}</a></li>
 							{% endfor %}
-							{% for p in PAGES %}
-									<li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-							{% endfor %}
-
 							{% if DISPLAY_PAGES_ON_MENU %}
-							    {% for p in PAGES %}
+							    {% for p in pages %}
 							        <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
 							    {% endfor %}
 							{% elif DISPLAY_CATEGORIES_ON_MENU %}
