@@ -1,0 +1,20 @@
+﻿{% extends "without-sidebar.html" %}
+
+{% block title %}- {{ page.title }}{% endblock title %}
+
+{% block content %}
+	<h3 class="headline">
+		{{ page.title }}{% if page.subtitle %}<small> - {{ page.subtitle }}</small>{% endif %}
+	</h3>
+	<span class="line" style="margin-bottom:35px;"></span>
+	<div class="clearfix"></div>
+	{{ page.content }}
+	{% if page.album %}
+	<h2><a href="{{ SITEURL }}/pages/gallery.html#{{ page.album }}">{{ page.album }} pics</a></h2>
+	<div class="popup-gallery">
+	{% for image in page.galleryimages %}
+	<a class="{{ page.album }}" href="{{ SITEURL }}/images/gallery/{{ page.album }}/{{ image }}"><img style="display:inline;padding:10px;" src="{{ SITEURL }}/images/thumbnail_square/gallery/{{ page.album }}/{{ image }}"></a>
+	{% endfor %}
+	</div>
+	{% endif %}
+{% endblock content %}

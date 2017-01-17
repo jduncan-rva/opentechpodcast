@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content_placeholder %}
+	<div class="twelve alt columns">
+		{% block content %}{% endblock content %}
+	</div>
+
+	<!-- Sidebar -->
+	<div class="four columns">
+		{% if 'about' in SIDEBAR_DISPLAY and SIDEBAR_ABOUT %}
+		<!-- About  -->
+		<div class="widget no-mg-top">
+			<h3 class="headline">About</h3><span class="line"></span><div class="clearfix"></div>
+			<p>{{ SIDEBAR_ABOUT }}</p>
+		</div>
+		{% endif %}
+
+		{% if 'categories' in SIDEBAR_DISPLAY %}
+		<!-- Categories -->
+		<div class="widget{% if 'about' not in SIDEBAR_DISPLAY %} no-mg-top{% endif %}">
+			<h3 class="headline">Categories</h3><span class="line"></span><div class="clearfix"></div>
+			<nav class="categories">
+				<ul>
+					{% for cat, null in categories %}
+					    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</div>
+		{% endif %}
+
+		{% if 'tags' in SIDEBAR_DISPLAY %}
+		<!-- Tags -->
+		<div class="widget{% if 'about' not in SIDEBAR_DISPLAY and 'categories' not in SIDEBAR_DISPLAY %} no-mg-top{% endif %}">
+			<h3 class="headline">Tags</h3><span class="line"></span><div class="clearfix"></div>
+			<nav class="tags">
+				{%- for tag, articles in tags|sort %}
+				    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+				{% endfor %}
+			</nav>
+		</div>
+		{% endif %}
+		<a class="twitter-timeline headline"
+			href="https://twitter.com/jamieeduncan"
+			data-widget-id="670096630377545729"
+			data-tweet-limit="5"
+			data-chrome="noborders transparent noscrollbar"></a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+	</div>
+{% endblock content_placeholder %}
