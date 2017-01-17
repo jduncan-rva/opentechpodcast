@@ -74,7 +74,8 @@ EXTRA_PATH_METADATA = {
 SIDEBAR_DISPLAY = ['about','links','categories','tags']
 SIDEBAR_ABOUT = "A couple of career Open Source Geeks talking about technology with their friends."
 THEME_COLOR = 'red'
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True 
 
 # thumbnailer settings
 IMAGE_PATH = 'images'
