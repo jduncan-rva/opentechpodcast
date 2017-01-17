@@ -32,17 +32,6 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['asciidoc_reader',
-            'sitemap',
-            'gravatar',
-            'filetime_from_git',
-            'gallery',
-            'thumbnailer',
-            'disqus_static',]
-
 THEME = "pelican-theme"
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['asciidoc_reader',
@@ -52,8 +41,6 @@ PLUGINS = ['asciidoc_reader',
             'gallery',
             'thumbnailer',
             'disqus_static',]
-
-THEME = "pelican-theme"
 
 SITEMAP = {
     'format': 'xml',
@@ -83,15 +70,11 @@ EXTRA_PATH_METADATA = {
 }
 
 
-# blueidea settings
-DISPLAY_CATEGORIES_ON_SUBMENU = True
-DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_SEARCH_FORM = True
-
 # nice-blog them settings
-SIDEBAR_DISPLAY = ['about','categories','tags']
+SIDEBAR_DISPLAY = ['about','links','categories','tags']
 SIDEBAR_ABOUT = "A couple of career Open Source Geeks talking about technology with their friends."
 THEME_COLOR = 'red'
+DISPLAY_PAGES_ON_MENU = True
 
 # thumbnailer settings
 IMAGE_PATH = 'images'
