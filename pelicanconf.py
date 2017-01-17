@@ -43,7 +43,8 @@ PLUGINS = ['asciidoc_reader',
             'thumbnailer',
             'disqus_static',]
 
-THEME = "pelican-theme"PLUGIN_PATHS = ['pelican-plugins']
+THEME = "pelican-theme"
+PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['asciidoc_reader',
             'sitemap',
             'gravatar',
