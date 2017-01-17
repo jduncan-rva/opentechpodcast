@@ -1,8 +1,8 @@
-= About
+= About jduncan
 :author: Jamie Duncan
 :date: 2016-10-20 11:32
 :modified: 2016-10-20 11:32
-:slug: about
+:slug: jduncan
 :summary: a bit about jduncan
 :category: page
 :tags: about,life,jduncan
