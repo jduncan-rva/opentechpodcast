@@ -9,9 +9,12 @@
 
 == Dad, Husband, Linux Geek, F1 Fan, Farm Owner
 
+.me and the Mars Rover. no biggie.
+image::https://pbs.twimg.com/profile_images/667454843930419200/ywx-j48R.jpg[]
+
 But not always in that order. I like to think of myself as a problem solver in everything that I do.
 
-I apply that idea to Linux and Open Source software for my day job.
+I apply that idea to Linux and Open Source software for my day job at Red Hat.
 
 I apply it to the 6 acres of land we own every chance I get.
 
