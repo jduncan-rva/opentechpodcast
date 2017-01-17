@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Jamie Duncan'
 SITENAME = u'Open Tech Podcast'
-SITEURL = 'https://www.opentechpodcast.org'
+SITEURL = 'https://opentechpodcast.org'
 
 PATH = 'content'
 
@@ -13,7 +13,7 @@ TIMEZONE = 'America/New_York'
 DEFAULT_LANG = u'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = 'www.opetechpodcast.org'
+FEED_ALL_ATOM = 'opetechpodcast.org'
 CATEGORY_FEED_ATOM = 'feeds/all.atom.xml'
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
