@@ -83,6 +83,16 @@ EXTRA_PATH_METADATA = {
 }
 
 
+# blueidea settings
+DISPLAY_CATEGORIES_ON_SUBMENU = True
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_SEARCH_FORM = True
+
+# nice-blog them settings
+SIDEBAR_DISPLAY = ['about','categories','tags']
+SIDEBAR_ABOUT = "A couple of career Open Source Geeks talking about technology with their friends."
+THEME_COLOR = 'red'
+
 # thumbnailer settings
 IMAGE_PATH = 'images'
 THUMBNAIL_DIR = 'images'
