@@ -1,0 +1,10 @@
+= dsirrine
+:author: Jamie Duncan
+:date: 2016-10-20 11:32
+:modified: 2016-10-20 11:32
+:slug: dsirrine
+:summary: a bit about dsirrine
+:category: page
+:tags: about,life,dsirrine
+
+== Coming Soon!
