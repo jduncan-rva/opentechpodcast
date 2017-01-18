@@ -22,8 +22,8 @@
 			<h3 class="headline">Links</h3><span class="line"></span><div class="clearfix"></div>
 			<nav class="links">
 				<ul>
-					{% for cat, null in LINKS %}
-					    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+					{% for name, url in LINKS %}
+					    <li><a href="{{ url }}">{{ name }}</a></li>
 					{% endfor %}
 				</ul>
 			</nav>

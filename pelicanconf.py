@@ -23,8 +23,7 @@ FEED_RSS = 'feeds/rss.xml'
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Jinja2', 'http://jinja.pocoo.org/'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
@@ -63,7 +62,7 @@ STATIC_PATHS = [
     'extra/CNAME'
 ]
 
-EXTRA_PATH_METADATA = { 
+EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'}
