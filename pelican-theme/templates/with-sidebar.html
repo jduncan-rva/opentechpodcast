@@ -16,14 +16,28 @@
 		</div>
 		{% endif %}
 
+		{% if 'links' in SIDEBAR_DISPLAY %}
+		<!-- Categories -->
+		<div class="widget{% if 'about' not in SIDEBAR_DISPLAY %} no-mg-top{% endif %}">
+			<h3 class="headline">Links</h3><span class="line"></span><div class="clearfix"></div>
+			<nav class="categories">
+				<ul>
+					{% for cat, null in links %}
+					    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+					{% endfor %}
+				</ul>
+			</nav>
+		</div>
+		{% endif %}
+
 		{% if 'categories' in SIDEBAR_DISPLAY %}
 		<!-- Categories -->
 		<div class="widget{% if 'about' not in SIDEBAR_DISPLAY %} no-mg-top{% endif %}">
 			<h3 class="headline">Categories</h3><span class="line"></span><div class="clearfix"></div>
 			<nav class="categories">
 				<ul>
-					{% for cat, null in categories %}
-					    <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+					{%- for name, url in links %}
+					    <li><a href="{{ url }}">{{ name }}</a></li>
 					{% endfor %}
 				</ul>
 			</nav>

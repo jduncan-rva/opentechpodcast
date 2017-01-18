@@ -63,7 +63,7 @@ STATIC_PATHS = [
     'extra/CNAME'
 ]
 
-EXTRA_PATH_METADATA = {
+EXTRA_PATH_METADATA = { 
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/CNAME': {'path': 'CNAME'}
@@ -72,7 +72,7 @@ EXTRA_PATH_METADATA = {
 
 # nice-blog them settings
 SIDEBAR_DISPLAY = ['about','links','categories','tags']
-SIDEBAR_ABOUT = "A couple of career Open Source Geeks talking about technology with their friends."
+SIDEBAR_ABOUT = "Jamie Duncan and Dave Sirrine. A couple of career Open Source Geeks talking about technology with their friends, and an occassional beer."
 THEME_COLOR = 'red'
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = True
