@@ -1,0 +1,26 @@
+= Getting Going and Ready for Episode 1
+
+:author: Jamie Duncan
+:date: 2016-10-20 11:32
+:modified: 2016-10-20 11:32
+:slug: getting-ready
+:summary: Talking about what we plan on doing with this endeavor and how much fun we plan on having
+:tags: planning
+:category: episodes
+:Image: yellow-brick-road.jpg
+
+== Oh Look! Another Tech Podcast!
+
+Well. Sorta'. Maybe. link:https://twitter.com/dsirrine[Dave Sirrine] and link:https://twitter.com/jamieeduncan[me] have a combined 3204043 years of experience in IT. Approximately. We might have rounded up a bit. But it's a lot.
+
+We are also luckily and uniquely positioned to talk to a huge swatch of the Open Source Technology Community.
+
+So our plans are to bring them and their technologies on to this podcast and have a good time.
+
+The plan is for this project to be a nuts and bolts sort of thing. There will be lots of demos and howtos and talking about the solving of problems. We will keep the debating of theory to a practical minimum. We hope.
+
+Unless we get an awesome sponsor. Then it's all theory all the time.
+
+Or not.
+
+-jduncan 
