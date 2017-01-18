@@ -36,8 +36,8 @@
 			<h3 class="headline">Categories</h3><span class="line"></span><div class="clearfix"></div>
 			<nav class="categories">
 				<ul>
-					{%- for name, url in links %}
-					    <li><a href="{{ url }}">{{ name }}</a></li>
+					{% for cat, null in categories %}
+							<li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
 					{% endfor %}
 				</ul>
 			</nav>
